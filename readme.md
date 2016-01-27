@@ -2,6 +2,8 @@
 
 This is a simple docker setup for running a redis instance in conjuction with the popular free redis admin interface [Redis Commander](https://github.com/joeferner/redis-commander).
 
+The official *DockerHub* repository is at [https://hub.docker.com/r/dmportella/redis-commander/](https://hub.docker.com/r/dmportella/redis-commander/)]
+
 # Running this solution
 
 This quite simple to run all commands are detailed below.
