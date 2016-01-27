@@ -28,7 +28,7 @@ RUN: `docker run --name redis -p "6379:6379" -d redis:latest`
 
 RUN: `docker pull dmportella/redis-commander`
 
-1. Run the docker instance from the create image this command will create an container with the name commander linked the redis container and it will expose the application on 127.0.0.1:8080. 
+2. Run the docker instance from the create image this command will create an container with the name commander linked the redis container and it will expose the application on 127.0.0.1:8080. 
 
 RUN: `docker run --name commander --link redis:redis -p 127.0.0.1:8080:8080 -d dmportella/redis-commander:latest`
 
