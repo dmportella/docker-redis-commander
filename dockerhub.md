@@ -34,5 +34,6 @@ RUN: `docker run --name commander --link redis:redis -p 127.0.0.1:8080:8080 -d d
 
 ## Credentials
 
+URL: http://localhost:8080
 User name: `guest`
 Password: `guest`
