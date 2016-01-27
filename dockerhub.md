@@ -1,6 +1,8 @@
-This setup uses the standard and official redis docker image (must be running sep# Redis Commander in Docker
+# Redis Commander in Docker
 
 This is a simple docker setup for running a redis instance in conjuction with the popular free redis admin interface [Redis Commander](https://github.com/joeferner/redis-commander).
+
+Repository at: [https://github.com/dmportella/docker-redis-commander](https://github.com/dmportella/docker-redis-commander)
 
 # Running this solution
 
