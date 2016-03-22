@@ -6,7 +6,7 @@ This is a simple docker setup for running a redis instance in conjuction with th
 
 The official **DockerHub** repository for this project is at: [https://hub.docker.com/r/dmportella/redis-commander/](https://hub.docker.com/r/dmportella/redis-commander/)
 
-[![dockeri.co](http://dockeri.co/image/dmportella/docker-redis-commander)](https://hub.docker.com/r/dmportella/docker-redis-commander/)
+[![dockeri.co](http://dockeri.co/image/dmportella/redis-commander)](https://hub.docker.com/r/dmportella/redis-commander/)
 
 # Running this solution
 
