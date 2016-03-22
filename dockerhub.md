@@ -14,25 +14,31 @@ This quite simple to run all commands are detailed below.
 
 Firstly this setup uses a default and the official setup of redis from docker hub to install redis with a custom setup please visit redis web site.
 
-1. Pull the redis image. 
+Pull the redis image. 
 
-RUN: `docker pull redis`
+> $ `docker pull redis`
 
-2. Run the newly installed image. 
+Run the newly installed image. 
 
-RUN: `docker run --name redis -p "6379:6379" -d redis:latest`
+> $ `docker run --name redis -p "6379:6379" -d redis:latest`
 
 ## Commander
 
-1. Pull the docker commander image.
+Pull the docker commander image.
 
-RUN: `docker pull dmportella/redis-commander`
+> $ `docker pull dmportella/redis-commander`
 
-2. Run the docker instance from the create image this command will create an container with the name commander linked the redis container and it will expose the application on 127.0.0.1:8080. 
+Run the docker instance from the create image this command will create an container with the name commander linked the redis container and it will expose the application on 127.0.0.1:8080.
 
-RUN: `docker run --name commander --link redis:redis -p 127.0.0.1:8080:8080 -d dmportella/redis-commander:latest`
+> $ `docker run --name commander --link redis:redis -p 127.0.0.1:8080:8080 -d dmportella/redis-commander:latest`
 
 ## Credentials
+
+The default credentials are detailed below however if you want to change them you can pass pass in the following environment variables on the docker run command. See docker help docs for details about overridding environment variables on the run command.
+
+`COMMANDER_USER` and `COMMANDER_USER_PWD`.
+
+### Default values
 
 URL: http://localhost:8080
 User name: `guest`
