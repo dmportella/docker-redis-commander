@@ -36,6 +36,20 @@ Firstly this setup uses a default and the official setup of redis from docker hu
 
 > $ `docker run --name commander --link redis:redis -p 127.0.0.1:8080:8080 -d commander:latest`
 
+## Credentials
+
+The default credentials are detailed below however if you want to change them you can pass pass in the following environment variables on the docker run command. See docker help docs for details about overridding environment variables on the run command.
+
+> `COMMANDER_USER` and `COMMANDER_USER_PWD`.
+
+### Default values
+
+> URL: http://localhost:8080
+
+> User name: `guest`
+
+> Password: `guest`
+
 ## Addition helpful commands
 
 see below a list of useful commands.
