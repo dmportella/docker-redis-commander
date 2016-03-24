@@ -41,5 +41,7 @@ The default credentials are detailed below however if you want to change them yo
 ### Default values
 
 > URL: http://localhost:8080
+
 > User name: `guest`
+
 > Password: `guest`
