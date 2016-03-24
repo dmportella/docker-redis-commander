@@ -36,10 +36,10 @@ Run the docker instance from the create image this command will create an contai
 
 The default credentials are detailed below however if you want to change them you can pass pass in the following environment variables on the docker run command. See docker help docs for details about overridding environment variables on the run command.
 
-`COMMANDER_USER` and `COMMANDER_USER_PWD`.
+> `COMMANDER_USER` and `COMMANDER_USER_PWD`.
 
 ### Default values
 
-URL: http://localhost:8080
-User name: `guest`
-Password: `guest`
+> URL: http://localhost:8080
+> User name: `guest`
+> Password: `guest`
