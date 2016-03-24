@@ -20,20 +20,21 @@ Firstly this setup uses a default and the official setup of redis from docker hu
 
 1. Pull the redis image. 
 
-RUN: `docker pull redis`
+> $ `docker pull redis`
 
 2. Run the newly installed image. 
 
-RUN: `docker run --name redis -p "6379:6379" -d redis:latest`
+> $ `docker run --name redis -p "6379:6379" -d redis:latest`
 
 ## Commander
 
 1. Build the redis commander dockerfile this command will create an image with the name commander and tag latest. 
 
-RUN: `docker build -t commander:latest .`
+> $ `docker build -t commander:latest .`
 
 2. Run the docker instance from the create image this command will create an container with the name commander linked the redis container and it will expose the application on 127.0.0.1:8080. 
-RUN: `docker run --name commander --link redis:redis -p 127.0.0.1:8080:8080 -d commander:latest`
+
+> $ `docker run --name commander --link redis:redis -p 127.0.0.1:8080:8080 -d commander:latest`
 
 ## Addition helpful commands
 
@@ -41,9 +42,8 @@ see below a list of useful commands.
 
 ### Bash into the container
 
-RUN: `docker exec -it commander bash`
+> $ `docker exec -it commander bash`
 
 ### Stop and delete the container and image
 
-RUN: `docker stop commander && docker rm commander && docker rmi commander`
-
+> $ `docker stop commander && docker rm commander && docker rmi commander`
